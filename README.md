@@ -10,5 +10,6 @@ The stock firmware of the Shelly Dimmer 2 can be found here https://github.com/M
 
 
 Command to backup a firmware: esptool.py --port /dev/ttyUSB0 read_flash 0x00000 0x200000 shelly_dimmer_2_backup.bin
+
 Command to restore a firmware: esptool.py --port /dev/ttyUSB0 write_flash 0x00000 shelly_dimmer_2_backup.bin --flash_size 2MB
 
