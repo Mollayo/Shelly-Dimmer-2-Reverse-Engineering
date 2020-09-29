@@ -8,6 +8,7 @@ Some tools for the reverse engineering of the Shelly Dimmer 2.
 
 The stock firmware of the Shelly Dimmer 2 can be found here https://github.com/Mollayo/Shelly-Dimmer-2-Reverse-Engineering/tree/master/shelly%20stock%20firmware.
 
+
 Command to backup a firmware: esptool.py --port /dev/ttyUSB0 read_flash 0x00000 0x200000 shelly_dimmer_2_backup.bin
 Command to restore a firmware: esptool.py --port /dev/ttyUSB0 write_flash 0x00000 shelly_dimmer_2_backup.bin --flash_size 2MB
 
